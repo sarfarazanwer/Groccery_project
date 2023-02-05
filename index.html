@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>InBasket</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+ <script src="js/cart.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+	<script>
+
+	window.onload = function(){
+	
+	if(sessionStorage.clickcount.toString != "undefined") {
+	if(sessionStorage.clickcount == 0){
+	document.getElementById("cartValue").innerHTML =  sessionStorage.clickcount ;
+	}else{
+
+	document.getElementById("cartValue").innerHTML =  sessionStorage.clickcount ;
+	}
+	}else{
+	document.getElementById("cartValue").innerHTML =  0 ;
+	}
+};
+	
+	</script>
+	
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+    <div class="container">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+
+      <div class="navbar-header">
+        <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="navbar-brand" href="index.html">InBasket</a>
+      </div>
+       <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+       <li><a href="index.html">Home</a>
+          </li>
+          <li><a href="GroceryInBasket.html">Grocery</a>    
+          </li>
+          <li><a href="ProduceInBasket.html">Produce</a>
+          </li>
+          <li><a href="MeatInBasket.html">Meat</a>
+          </li>
+		  <li><a href="SpicesInBasket.html">Spices</a>
+          </li>
+          <li><a href="DairyInBasket.html">Dairy</a>
+          </li>
+		   <li><a href="PromotionsInBasket.html">Promotion<div id="result"></div><div id="result1"></div></a>
+          </li>
+       <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+			  <li><a href="AboutUsInBasket.html">About Us</a>
+              </li>
+              <li><a href="ContactUsInBasket.html">Contact Us</a>
+              </li>
+                 <li class="divider"></li>
+              <li><a href="MapInBasket.html">Get Direction</a>
+              </li>
+            </ul>
+          </li>
+		  <li><a href="CheckoutInBasket.html" id="cart"><i class="fa fa-shopping-basket" style="font-size:24px;color:red"></i> <span class="badge" id="cartValue"></span></a></li>
+           <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </li>
+            <li><a href="SignUpNavInBasket.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="LoginNavInBasket.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>    
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="img/first-image.png" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+             <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
+            </div>
+          </div>
+        </div>
+        <div class="item">
+            <img class="first-slide" src="img/meat.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="carouselTextH1">The best meat in town</h1>
+              <h3 class="carouselTextH3"> The meat that everybody loves.</h3>
+              <p><a class="btn btn-lg btn-primary" href="MeatInBasket.html" role="button">Meet the Meat</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+            <img class="first-slide" src="img/Fruits-and-Vegetables.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="carouselTextH1">Super fersh Produce.</h1>
+              <h3 class="carouselTextH3">Fresh fruits and vegetables direct from the farm to your kitchen </h3>
+              <p><a class="btn btn-lg btn-primary" href="ProduceInBasket.html" role="button">Explore</a></p>
+            </div>
+          </div>
+        </div>
+           <div class="item">
+            <img class="first-slide" src="img/spices.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="carouselTextH1">The magic of flavour</h1>
+              <h3 class="carouselTextH3"> Taste that makes your taste bud say thanks.</h3>
+              <p><a class="btn btn-lg btn-primary" href="SpicesInBasket.html" role="button">Spice it up</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+<marquee behavior="scroll" direction="Left"><h1>DONT MISS THE EXITING SALES OF THIS WEEK......SALE ENDS ON MAY 5</h1></marquee>
+      
+      
+
+      <!-- Three columns of text below the carousel -->
+      <div class="container marketing">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-rounded" src="img/strawberry.jpg" alt="Generic placeholder image" width="190" height="190">
+          <h2>strawberry</h2>
+            <h4><br>Sale Price: $2.99<br></h4>
+          <p> Regular price: $5.99  </p>
+          <p><a class="btn btn-default"  href="produce.html" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-rounded" src="img/shrimp.jpg" alt="Generic placeholder image" width="190" height="190">
+		  <h2>Shrimp</h2>
+           <h4><br>Sale Price: $4.99/lb<br></h4>
+          <p> Regular price: $6.99  </p>
+          <p><a class="btn btn-default"  href="meat.html" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+           <img class="img-rounded" src="img/india-gate.jpg" alt="Generic placeholder image" width="190" height="190">
+          <h2>Bsmati Rice</h2>
+          <h4><br>Sale Price: $7.99<br></h4>
+          <p> Regular price: $9.49  </p>
+          <p><a class="btn btn-default" href="Grocery.html" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      </div>
+      <!-- START THE FEATURETTES -->
+ <div class="container marketing">
+      <hr class ="featurette-divider">
+      
+<h1 class="blink"><center>We make it easier ...now you can shop by recipe</center></h1>
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Chilli Chicken  <span class="text-muted"><br><h3>Taste that will blow your mind</h3></span></h2>
+            <p>Chilli chicken in one of the most popular Indo_chinese style chicken appetizer.It is sweet spicy and slightly sour made with chicken, bell pepper, Chilli/ chilli sauce, garlic, ginjer, and soya sauce.It is one of the simplest recipe to cook.   </p>
+            <a class="click" href="https://www.youtube.com/watch?v=pMCS1TR4Wyo" target="_blank">Click here to Learn</a> 
+
+            <fieldset>
+        <legend>Ingredients Required</legend>
+        <input type="radio"  /><label for="track">Chicken Small pieced </label><br />
+        <input type="radio"  /><label for="track">All purpose flour </label><br />
+        <input type="radio" /><label for="event">Ginger</label><br />
+        <input type="radio"  /><label for="message">Garlic</label><br />
+        <input type="radio"  /><label for="track">Egg</label><br />
+        <input type="radio" /><label for="event">Soya sauce</label><br />
+        <input type="radio"  /><label for="message">Cooking oil</label><br />
+  </fieldset>
+             <p><a class="btn btn-lg btn-primary" href="CheckoutInBasket.html" role="button">Shop Ingredients</a></p>
+             </div>
+          
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="img/chilli-chicken.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Strawberry Smoothee <span class="text-muted"><br><h3>So Yummy</h3></span></h2>
+           <p>A smoothie is very popular beverage with shake like consistency and  is super easy to make it. Just add fuits or vegetables of your choice in  liquid such as fruit juice, vegetable juice, milk, or even yogurt and some sugar, honey or jaggery of your choice and then blend it .Smoothie is ready to serve. </p>
+          <a class="click" href="https://www.youtube.com/watch?v=LMdXdn1L0fg" target="_blank">Click here to Learn</a> 
+
+            <fieldset>
+        <legend>Ingredients Required</legend>
+        <input type="radio"  /><label for="track">1 cup Yogurt </label><br />
+        <input type="radio"  /><label for="track"> 6 Strawberry </label><br />
+        <input type="radio" /><label for="event"> i peeled Banana</label><br />
+        <input type="radio"  /><label for="message"> 1 cup Milk</label><br />
+        <input type="radio"  /><label for="track">1 teaspoon  soaked Chia Seed</label><br />
+        <input type="radio" /><label for="event">1 teaspoon Sugar/Honey</label><br />
+        
+  </fieldset>
+            <p><a class="btn btn-lg btn-primary" href="CheckoutInBasket.html" role="button">Shop Ingredients</a></p>
+             </div>
+          
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="img/strawberry-smoothie.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+           <h2 class="featurette-heading">Shrimp Rice <span class="text-muted"><br><h3>The perfect bite</h3></span></h2>
+         <p>Shrimp rice is one of the super delicious recipe for thoes who love sea-food. </p>
+          <a class="click" href="https://www.youtube.com/watch?v=cbn63DRhJ5E" target="_blank">Click here to Learn</a> 
+
+            <fieldset>
+        <legend>Ingredients Required</legend>
+        <input type="radio"  /><label for="track">1 cup Minute rice </label><br />
+        <input type="radio"  /><label for="track">6 tablespoons butter</label><br />
+        <input type="radio" /><label for="event">16 ounces extra large shrimp</label><br />
+        <input type="radio"  /><label for="message">Green onion/cilantro</label><br />
+                <input type="radio"  /><label for="track">4 egg</label><br />
+        <input type="radio" /><label for="event">ground pepper</label><br />
+        <input type="radio"  /><label for="message">Salt as per taste</label><br />
+  </fieldset>
+             <p><a class="btn btn-lg btn-primary" href="CheckoutInBasket.html" role="button">Shop Ingredients</a></p>
+             </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="img/shrimp-rice.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      
+      </div>
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            
+            <a href="AboutUsInBasket.html">About Us</a>  &nbsp;&nbsp; <a href="ContactUsInBasket.html">Contact Us</a>
+       </div>
+
+      </footer>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+      
+  </body>
+
+</html>

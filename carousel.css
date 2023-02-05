@@ -1,0 +1,340 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+	
+  color: #5a5a5a;
+}
+img {
+  border: 1px solid #009933;
+}
+
+.fa-shopping-cart{
+	text-align:right;
+}
+	
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.navbar-inverse .navbar-brand {
+    font-family: fantasy;
+    font-size: 40px;
+    font-family: Brush Script MT, Brush Script Std, fantasy;
+    text-shadow: 0 0 3px #003300, 0 0 5px #ffff00;
+
+}
+
+
+
+
+/* CUSTOMIZE THE FOOTER
+-------------------------------------------------- */
+.footer {
+  
+   left: 0;
+   bottom: 0;
+   width: 100%;
+    height: 4%;
+   background-color: cadetblue;
+   color: white;
+    text-align: center;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 1px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-3 {
+ padding-top:50px;
+ 
+ margin-top: 30px; 
+  margin-bottom: 1px;
+  text-align: center;
+}
+
+
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+      border-radius: 4px;
+    }
+ .navbar-inverse {
+    background-color: #1b121287;
+    border-color: #080808;
+}
+.navbar-inverse .navbar-brand {
+    color: #4aea36;
+}
+      .navbar-inverse .navbar-toggle {
+    border-color: #4ad029;
+}
+      .navbar-inverse .navbar-nav>li>a {
+    
+    font-size: 15px;
+    font-weight: 800;
+    color: #46ca36;
+
+}
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+
+.btn-default {
+    color: #f5f5f5;
+    background-color: #3fb266;
+    border-color: #126011;
+}
+.btn-default:hover {
+    color: #fcf8e3;
+    background-color: #ea7529;
+    border-color: #0b6b0c;
+}
+     h1 {
+    color: #7CFC00;
+    font-size: 46px;
+    font-family: cursive;
+}
+    }
+    .h2, h2{
+        font-family:cursive;
+       font-size: large;
+       color: darkslateblue;
+        
+    }
+/*
+.h3, h3 {
+    font-size: 24px;
+    font-family: revert;
+    color: #7CFC00;
+}
+*/
+.h4, h4 {
+    font-family: cursive;
+    font-size: large;
+    color: #009933;
+}
+    .h5, h5 {
+    font-family: cursive;
+    font-size: larger;
+    color: crimson;
+}
+.carouselTextH1{
+        text-shadow: -1px -1px white, 1px 1px #333
+    }
+    .carouselTextH3 {
+        text-shadow: 1px 1px white, -1px -1px #444
+    }
+
+legend {
+    font-family: cursive;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #47ea04;
+    border-bottom: 1px dashed #0a3504;
+}
+p {
+    margin: 0 0 10px;
+    font-family: cursive;
+    color: #6565bd;
+}
+.click {
+    color: #1c5b0d;
+    text-decoration: none;
+    border: 2px solid #8a472a;
+    border-radius: 5px;
+}
+    /* Table Style*/
+    td {
+    padding: 0;
+    font-family: cursive;
+    color: #5ca018;
+}
+    
+    /* Get Direction Page Style*/
+   input {
+    width: 200px;
+    height: 28px;
+    border-radius: 5px;
+    border-color: #5ca018;
+}
+    .myButton{
+        width: 200px;
+        height: 30px;
+        background-color: green;
+        color: white;
+        font-family: cursive;
+        box-shadow: 2px 2px lightgrey;
+        border-radius: 5px;
+    }
+    label {
+    font-family: cursive;
+    font-size: larger;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #29841e;
+}
+    .well {
+    justify-content: center;
+    min-height: 20px;
+    padding: 9px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+   
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
+}
+/*Footer Style*/
+a{
+     {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+}
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4%;
+    background-color: #868282;
+    color: #46ca36;
+    font-family: cursive;
+    text-align: center;
+}
+.footer1 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;  
+  height: 4%;
+  background-color: #868282;
+  color: #46ca36;
+  font-family: cursive;
+  text-align: center;
+}
+.center-block {
+    margin-top: 125px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+fieldset {
+    min-width: auto;
+    margin: 0;
+    border: 0;
+    padding-left: 45px;
+}
+ .blink {
+    animation: blinker 0.9s linear infinite;
+    color: #d00d0df7;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: cursive;
+}
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }

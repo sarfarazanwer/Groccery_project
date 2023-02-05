@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+	
+	 <script src="js/cart.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+<script>
+window.onload = function(){
+	if(sessionStorage.clickcount != "undefined") {
+	if(sessionStorage.clickcount == 0){
+	alert("test-if")
+	document.getElementById("cartValue").innerHTML =  sessionStorage.clickcount ;
+	}else{
+		alert("test-else")
+	document.getElementById("cartValue").innerHTML =  sessionStorage.clickcount ;
+	}
+	}else{
+	document.getElementById("cartValue").innerHTML =  0 ;
+	}
+};
+	
+	</script>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+    <div class="container">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+
+      <div class="navbar-header">
+        <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+         <a class="navbar-brand" href="index.html">InBasket.com</a>
+      </div>
+       <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+       <li><a href="index.html">Home</a>
+          </li>
+          <li><a href="GroceryInBasket.html">Grocery</a>    
+          </li>
+          <li><a href="ProduceInBasket.html">Produce</a>
+          </li>
+          <li><a href="MeatInBasket.html">Meat</a>
+          </li>
+		  <li><a href="SpicesInBasket.html">Spices</a>
+          </li>
+          <li><a href="DairyInBasket.html">Dairy</a>
+          </li>
+		   <li><a href="PromotionsInBasket.html">Promotion<div id="result"><div id="result1"></div></a>
+          </li>
+       <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+			  <li><a href="AboutUsInBasket.html">About Us</a>
+              </li>
+              <li><a href="ContactUsInBasket.html">Contact Us</a>
+              </li>
+                 <li class="divider"></li>
+              <li><a href="MapInBasket.html">Get Direction</a>
+              </li>
+            </ul>
+          </li>
+		  <li><a href="CheckoutInBasket.html" id="cart"><i class="fa fa-shopping-basket" style="font-size:24px;color:red"></i> <span class="badge" id="cartValue"></span></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img-rounded" src="img/india-gate.jpg" alt="Generic placeholder image" alt="Cinque Terre" width="190" height="190">
+            <figcaption><h4> Bsmati Rice</h4><h5> $9.49</h5></figcaption>
+		   <a class="btn btn-default" href="#" onclick="CartValueIncrement()" role="button">Add to basket</a>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+           <img class="img-rounded" src="img/wheat_flour.jpg" alt="Generic placeholder image" alt="Cinque Terre" width="190" height="190">
+          <figcaption><h4> Ashirwad Aata</h4><h5> $7.99</h5></figcaption>
+           <a class="btn btn-default" href="#" onclick="CartValueIncrement()" role="button">Add to basket</a>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <img class="img-rounded" src="img/canola-oil.png" alt="Generic placeholder image" alt="Cinque Terre" width="190" height="190">
+          <figcaption><h4> Canola Oil</h4><h5> $6.99</h5></figcaption>
+           <a class="btn btn-default" href="#"  onclick="CartValueIncrement()" role="button">Add to basket</a>
+        </div>
+		 <div class="col-lg-3">
+          <img class="img-rounded" src="img/fortune-sunflower-oil.jfif" alt="Generic placeholder image" alt="Cinque Terre" width="190" height="190">
+          <figcaption><h4>Sunflower Oil</h4><h5> $8.99</h5></figcaption>
+          <a class="btn btn-default" href="#" onclick="CartValueIncrement()" role="button">Add to basket</a>
+        </div>
+		
+		  <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img-rounded" src="img/chana-daal.jpg" alt="Generic placeholder image" alt="Cinque Terre" width="190" height="190">
+		  <figcaption><h4> Split chick peas</h4><h5> $3.99</h5></figcaption>
+          <a class="btn btn-default" href="#"  onclick="CartValueIncrement()" role="button">Add to basket</a>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+           <img class="img-rounded" src="img/chick-peas.jpg" alt="Generic placeholder image" alt="Cinque Terre" width="190" height="190">
+          <figcaption><h4>Chick-Peas </h4><h5> $2.99</h5></figcaption>
+           <a class="btn btn-default" href="#" onclick="CartValueIncrement()" role="button">Add to basket</a>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <img class="img-rounded" src="img/dried-green-pea.png" alt="Generic placeholder image" alt="Cinque Terre" width="190" height="190">
+          <figcaption><h4>Dry Green Pea </h4><h5> $2.99</h5></figcaption>
+           <a class="btn btn-default" href="#"  onclick="CartValueIncrement()" role="button">Add to basket</a>
+        </div>
+		 <div class="col-lg-3">
+          <img class="img-rounded" src="img/green-chick-peas.png" alt="Generic placeholder image" alt="Cinque Terre" width="190" height="200">
+          <figcaption><h4> Green Ghick Peas</h4><h5> $2.99</h5></figcaption>
+          <a class="btn btn-default" href="#" onclick="CartValueIncrement()" role="button">Add to basket</a>
+        </div>
+		 
+		<!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+	  
+
+       <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img-rounded" src="img/chips.jpg" alt="Generic placeholder image" alt="Cinque Terre" width="200" height="200">
+		  <figcaption><h4> Lays Chips</h4><h5> $2.99</h5></figcaption>
+          <a class="btn btn-default" href="#" onclick="CartValueIncrement()" role="button">Add to basket</a>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+           <img class="img-rounded" src="img/lays.jpg" alt="Generic placeholder image" alt="Cinque Terre" width="200" height="200">
+          <figcaption><h4> Lays Chips</h4><h5> $2.99</h5></figcaption>
+           <a class="btn btn-default" href="#"  onclick="CartValueIncrement()"role="button">Add to basket</a>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <img class="img-rounded" src="img/spicy-peanut.jfif" alt="Generic placeholder image" alt="Cinque Terre" width="200" height="200">
+            <figcaption><h4> Spicy Peanut</h4><h5> $2.99</h5></figcaption>
+        
+           <a class="btn btn-default" href="#" onclick="CartValueIncrement()" role="button">Add to basket</a>
+        </div>
+		 <div class="col-lg-3">
+          <img class="img-rounded" src="img/snacks.jfif" alt="Generic placeholder image" alt="Cinque Terre" width="200" height="200">
+          <figcaption><h4>Yummy Snacks</h4><h5> $3.99</h5></figcaption>
+          <a class="btn btn-default" href="#" onclick="CartValueIncrement()" role="button">Add to basket</a>
+        </div>
+		
+		
+		 
+		<!-- /.col-lg-4 -->
+     
+
+    </div><!-- /.container -->
+    <div class="row">
+        <div class="col-lg-3">
+          <img class="img-rounded" src="img/apricots.png" alt="Generic placeholder image" alt="Cinque Terre" width="200" height="200">
+		  <figcaption><h4> Lays Chips</h4><h5> $5.99</h5></figcaption>
+          <a class="btn btn-default" href="#" onclick="CartValueIncrement()" role="button">Add to cart</a>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+           <img class="img-rounded" src="img/dates.jpg" alt="Generic placeholder image" alt="Cinque Terre" width="200" height="200">
+          <figcaption><h4> Dry Dates 1lb</h4><h5> $3.99</h5></figcaption>
+           <a class="btn btn-default" href="#" onclick="CartValueIncrement()" role="button">Add to cart</a>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-3">
+          <img class="img-rounded" src="img/almonds.png" alt="Generic placeholder image" alt="Cinque Terre" width="200" height="200">
+            <figcaption><h4> Almond</h4><h5> $7.99</h5></figcaption>
+        
+           <a class="btn btn-default" href="#" onclick="CartValueIncrement()" role="button">Add to cart</a>
+        </div>
+		 <div class="col-lg-3">
+          <img class="img-rounded" src="img/cashew.png" alt="Generic placeholder image" alt="Cinque Terre" width="200" height="200">
+          <figcaption><h4>Cashew</h4><h5> $6.99</h5></figcaption>
+          <a class="btn btn-default" href="#" onclick="CartValueIncrement()" role="button">Add to cart</a>
+        </div>
+
+    </div><!-- /.container -->
+       
+      </div></div>
+       <footer>
+        <div class="footer">
+            
+            <a href="AboutUsInBasket.html">About Us</a>  &nbsp;&nbsp; <a href="ContactUsInBasket.html">Contact Us</a>
+       </div>
+
+      </footer>
+      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+	
+	
+      
+  </body>
+        <script>
+    function addItemToCart() {
+    var itemInCart = document.createElement("P")
+	int x =document.getElementById("itemsList").
+	
+    itemInCart.innerHTML = "Haldiram Sweets";
+    document.getElementById("itemsList").appendChild(itemInCart);
+}
+    </script>
+</html>

@@ -1,0 +1,20 @@
+index =>> space issue  , nav bar issue , footer(Done)
+Grocery ==>> price check $7.99/lb
+Meat ==>> OK OK
+Spice =>>> OK OK
+
+Dairy ==>>price check $7.99/lb
+Promotion =>> need to work()DONE
+
+Aboutus ==>> check content(TODOLIST)
+
+Map ==>> Footer(DONE) and box
+Contact =>> need to create(DONE)  content check ====> put address
+
+payment sccess page(DONE)  +  Content check 
+
+promotions content changes
+
+index  ==>> disabled cart image
+
+dropdown not working
